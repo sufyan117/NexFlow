@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NexFlow | Connect & Share</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">NexFlow</div>
+        <div class="nav-links">
+            <button onclick="showSection('home')">Home</button>
+            <button onclick="showSection('chat')">Chat Box</button>
+            <button onclick="showSection('profile')">Profile</button>
+        </div>
+    </nav>
+
+    <main id="main-content">
+        <!-- Home Section -->
+        <section id="home" class="content-section">
+            <div class="story-ring-container">
+                <div class="story-ring active">Your Story</div>
+                <div class="story-ring">User 1</div>
+            </div>
+            <div class="feed">
+                <div class="post">
+                    <h3>Post Title</h3>
+                    <p>This is where your poetry reels and images will show.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Chat Section -->
+        <section id="chat" class="content-section" style="display:none;">
+            <div class="chat-box">
+                <div id="messages" class="messages-area"></div>
+                <div class="input-area">
+                    <input type="text" id="msgInput" placeholder="Type a message...">
+                    <button onclick="sendMessage()">Send</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Profile Section -->
+        <section id="profile" class="content-section" style="display:none;">
+            <div class="profile-header">
+                <div class="avatar"></div>
+                <h2>Your Name</h2>
+                <p>ICS Physics Student | Developer</p>
+            </div>
+        </nav>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
